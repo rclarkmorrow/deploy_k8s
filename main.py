@@ -55,6 +55,7 @@ def require_jwt(function):
         return function(*args, **kws)
     return decorated_function
 
+# ROUTES
 
 @APP.route('/', methods=['POST', 'GET'])
 def health():
